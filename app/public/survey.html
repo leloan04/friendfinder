@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Friend Finder</h1>
+      <br>
+
+      <div class="text-center">
+        <a href="home.html"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Home</button></a>
+        <a href="survey.html"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-credit-card"></span>Survey</button></a>
+      </div>
+
+    </div>
+
+    <div class="survey">
+        <div>
+            <h2>Friend Survey</h2>
+            <br>
+            <h4>Name</h4>
+            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+            <h4>Link to Photo</h4>
+            <input type="text" id="photo" class="form-control" placeholder="Link to your picture" required>
+        </div>
+
+        <br>
+
+            <div class="questions">
+                <h4>Question 1</h4>
+                    <h5>I like Happy Hour.</h5>
+                    <select id="question1">
+                        <option value=""></option>
+                        <option value="1">1 (Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Agree)</option>
+                    </select>
+
+                <h4>Question 2</h4>
+                    <h5>I love pets.</h5>
+                    <select id="question2">
+                        <option value=""></option>
+                        <option value="1">1 (Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Agree)</option>
+                    </select>
+                
+                <h4>Question 3</h4>
+                    <h5>I am usually the one to start off conversations in a social setting.</h5>
+                    <select id="question3">
+                        <option value=""></option>
+                        <option value="1">1 (Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Agree)</option>
+                    </select>
+                
+                <h4>Question 4</h4>
+                    <h5>I'd rather read the book first, and then watch the movie.</h5>
+                    <select id="question4">
+                        <option value=""></option>
+                        <option value="1">1 (Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Agree)</option>
+                    </select>
+
+                <h4>Question 5</h4>
+                    <h5>I like to wait until to absolute last second to start a task.</h5>
+                    <select id="question5">
+                        <option value=""></option>
+                        <option value="1">1 (Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Agree)</option>
+                    </select>
+
+                    <h4>Question 6</h4>
+                        <h5>Memes are an amusing form of entertainment everyone should love.</h5>
+                        <select id="question6">
+                            <option value=""></option>
+                            <option value="1">1 (Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Agree)</option>
+                        </select>
+
+                    <h4>Question 7</h4>
+                        <h5>I am weary of those that don't have social media.</h5>
+                        <select id="question7">
+                            <option value=""></option>
+                            <option value="1">1 (Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Agree)</option>
+                        </select>
+
+                    <h4>Question 8</h4>
+                        <h5>I can find humor in the littlest of things.</h5>
+                         <select id="question8">
+                            <option value=""></option>
+                            <option value="1">1 (Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Agree)</option>
+                        </select>
+                    
+                    <h4>Question 9</h4>
+                        <h5>I like to drive fast.</h5>
+                        <select id="question9">
+                            <option value=""></option>
+                            <option value="1">1 (Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Agree)</option>
+                        </select>
+
+                    <h4>Question 10</h4>
+                        <h5>I love food probably more than anything.</h5>
+                        <select id="question10">
+                            <option value=""></option>
+                            <option value="1">1 (Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Agree)</option>
+                        </select>
+            </div>
+
+            <br>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends Link</a> | <a href="/api/waitlist">API Friends List</a> | <a href="https://github.com/leloan04/friendfinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+
+</body>
+</html>
